@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A shopping store homepage">
+    <script src="https://kit.fontawesome.com/469095c214.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cart.css">
+    <title>Shopping Store</title>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <p><i class="fa-solid fa-envelope"></i> kairakalyan@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 7660874122</p>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="navbar">
+            <p>Shopping Store</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+        <!-- Secondary Navbar with Dropdown, Search Bar, and Cart -->
+        <div class="navbar-b">
+            <div class="dropdown">
+                <select name="categories">
+                    <option value="1">Categories</option>
+                    <option value="2">New</option>
+                    <option value="3">Imported</option>
+                    <option value="4">Local</option>
+                </select>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Search..." id="searchBar" name="searchBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p id="count">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div id="root"></div>
+
+        <!-- Sidebar for Cart Items -->
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your Cart is Empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$ 0.00</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="cart.js"></script>  
+</body>
+</html>
